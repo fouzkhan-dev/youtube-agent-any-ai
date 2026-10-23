@@ -1,0 +1,16 @@
+---
+description: YouTube channel agent — routes requests to the yt-* skills in skills/
+alwaysApply: false
+---
+
+# YouTube Agent
+
+This repo contains a YouTube channel toolkit under `skills/`.
+Follow the router in `AGENTS.md` (repo root): when a request matches a
+row, read that `skills/yt-*/SKILL.md` in full and follow it exactly.
+
+Rules that always apply: read the voice file (`config.json` →
+`voice_file`) before writing anything spoken; run the matching Python
+tool in `skills/` when a skill calls for it; never invent a number;
+nothing publishes — end every output with a copyable block and the
+question: **ship it, or change it?**
